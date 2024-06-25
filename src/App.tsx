@@ -21,7 +21,7 @@ const App: React.FC = () => {
         <Container>
             <GlobalStyle />
             <Header
-                logoSrc="./src/assets/logo.png"
+                logoSrc="/logo.png"
                 quote={'"Autoconhecimento é a base para o crescimento."'}
             />
             <LinkButton href="https://p.eduzz.com/1750066" target="_blank">

@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({ logoSrc, quote }) => {
         <HeaderContainer>
             <Logo src={logoSrc} alt="Logo" />
             <QuoteWrapper>
-                <QuoteIcon src="./src/assets/aspas.png" alt="Quotes Icon" />
+                <QuoteIcon src="/aspas.png" alt="Quotes Icon" />
                 <QuoteText>{quote}</QuoteText>
             </QuoteWrapper>
         </HeaderContainer>
