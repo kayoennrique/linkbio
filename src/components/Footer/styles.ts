@@ -17,6 +17,7 @@ export const TextLink = styled.p`
 export const Link = styled.a`
     color: white;
     font-weight: bold;
+    text-decoration: underline;
 
     &:hover {
         color: #6b02c9;
