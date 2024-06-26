@@ -18,7 +18,7 @@ export const Link = styled.a`
     color: white;
     font-weight: bold;
     text-decoration: underline;
-
+    font-family: "Montserrat", sans-serif;
     &:hover {
         color: #6b02c9;
     }

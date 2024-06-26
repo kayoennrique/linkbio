@@ -13,6 +13,8 @@ export const Button = styled.a`
     transition: background 0.5s;
     width: 90%;
     max-width: 400px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
 
     &:hover {
         background: linear-gradient(90deg, #000 -50%, #9e17ba 100%);
