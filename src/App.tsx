@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Header from "./components/Header";
 import GlobalStyle from "./styles";
-import PlantImage from "/plant.png";
+import PlantImage from "/plant.webp";
 import Footer from "./components/Footer";
 import LinkButton from "./components/Button";
 import { GrSchedule, GrSchedules } from "react-icons/gr";
@@ -58,7 +58,7 @@ const App = () => {
             <Watermark />
             <Content>
                 <Header
-                    logoSrc="/logo.png"
+                    logoSrc="/logo.webp"
                     quote={'"Autoconhecimento é a base para o crescimento."'}
                 />
                 <LinkButton
