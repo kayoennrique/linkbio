@@ -1,10 +1,12 @@
-import React from "react";
 import styled from "styled-components";
 import Header from "./components/Header";
 import GlobalStyle from "./styles";
 import PlantImage from "/plant.png";
-import Footer from "./components/Footer/Footer";
-import LinkButton from "./components/Button/Button";
+import Footer from "./components/Footer";
+import LinkButton from "./components/Button";
+import { GrSchedule, GrSchedules } from "react-icons/gr";
+import { FaDownload } from "react-icons/fa";
+import { FaSquareWhatsapp } from "react-icons/fa6";
 
 const Container = styled.div`
     display: flex;
@@ -49,7 +51,7 @@ const Content = styled.div`
     justify-content: center;
 `;
 
-const App: React.FC = () => {
+const App = () => {
     return (
         <Container>
             <GlobalStyle />
@@ -59,24 +61,71 @@ const App: React.FC = () => {
                     logoSrc="/logo.png"
                     quote={'"Autoconhecimento é a base para o crescimento."'}
                 />
-                <LinkButton href="https://p.eduzz.com/1750066" target="_blank">
+                <LinkButton
+                    href="https://p.eduzz.com/1750066"
+                    target="_blank"
+                    icon={
+                        <GrSchedules
+                            size={20}
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                marginRight: "0.95rem",
+                            }}
+                        />
+                    }
+                >
                     JOURNAL MEU AUTOCUIDADO DIÁRIO
                 </LinkButton>
                 <LinkButton
                     href="https://drive.google.com/file/d/1Jz1ajX3Dt1OnqfT9l8HWNwq3xqMPJZzM/view"
                     target="_blank"
+                    icon={
+                        <FaDownload
+                            size={20}
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                marginRight: "0.95rem",
+                            }}
+                        />
+                    }
                 >
                     BAIXE SUA AGENDA M.A.P. GRATUITAMENTE
                 </LinkButton>
                 <LinkButton
                     href="https://api.whatsapp.com/send/?phone=5521971744740&text&type=phone_number&app_absent=0"
                     target="_blank"
+                    icon={
+                        <GrSchedule
+                            size={20}
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                marginRight: "0.95rem",
+                            }}
+                        />
+                    }
                 >
                     AGENDE SUA TERAPIA
                 </LinkButton>
                 <LinkButton
                     href="https://api.whatsapp.com/send/?phone=5521971744740&text&type=phone_number&app_absent=0"
                     target="_blank"
+                    icon={
+                        <FaSquareWhatsapp
+                            size={20}
+                            style={{
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
+                                marginRight: "0.95rem",
+                            }}
+                        />
+                    }
                 >
                     SUPERVISÃO PARA PSICANALISTA EM FORMAÇÃO
                 </LinkButton>
