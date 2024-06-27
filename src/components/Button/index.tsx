@@ -7,9 +7,11 @@ const LinkButton: React.FC<LinkButtonProps> = ({
     children,
     target,
     rel,
+    icon,
 }) => {
     return (
         <S.Button href={href} target={target} rel={rel}>
+            {icon && <span>{icon}</span>}
             {children}
         </S.Button>
     );
